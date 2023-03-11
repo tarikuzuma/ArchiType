@@ -9,7 +9,7 @@ root.geometry("300x300") #root.geometry() is a method in the tkinter library for
 text = gui.Label(root, text="Architype Main Menu!" , font = ('Helvetica', 18))
 text.pack(padx=20, pady=20)
 
-button1 = gui.Button(root, text="Loram Ipsum", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray', command=lambda: openWindowNumbar1(root))
+button1 = gui.Button(root, text="Calculator", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray', command=lambda: openWindowNumbar1(root))
 button1.pack(padx=20, pady= 7)
 
 button2 = gui.Button(root, text="Loram Ipsum", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray')
