@@ -12,7 +12,7 @@ text.pack(padx=20, pady=20)
 button1 = gui.Button(root, text="Calculator", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray', command=lambda: openWindowNumbar1(root))
 button1.pack(padx=20, pady= 7)
 
-button2 = gui.Button(root, text="Loram Ipsum", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray')
+button2 = gui.Button(root, text="Converter", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray')
 button2.pack(padx=20, pady= 7)
 
 button3 = gui.Button(root, text="Loram Ipsum", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray')
