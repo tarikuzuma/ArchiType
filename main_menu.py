@@ -1,8 +1,7 @@
 import tkinter as gui
 from calculator import *
+from converter import *
 
-def say_hello():
-    print("Hello!")
 
 def say_goodbye():
     print("Goodbye!")
@@ -18,15 +17,15 @@ root.geometry("300x300") #root.geometry() is a method in the tkinter library for
 text = gui.Label(root, text="Architype Main Menu!" , font = ('Helvetica', 18))
 text.pack(padx=20, pady=20)
 
-button1 = gui.Button(root, text="Calculator", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray', command=lambda: openWindowNumbar1(root))
+button1 = gui.Button(root, text="Calculator", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray', command=lambda: open_calc(root))
 button1.pack(padx=20, pady= 7)
 
 button2 = gui.Button(root, text="Converter", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray')
 button2.pack(padx=20, pady= 7)
 
 dropdown_menu = gui.Menu(button2, tearoff=False)
-dropdown_menu.add_command(label="Say Hello", command=say_hello)
-dropdown_menu.add_command(label="Say Goodbye", command=say_goodbye)
+dropdown_menu.add_command(label="Temperature Convert", command=lambda: open_tempcon(root))
+dropdown_menu.add_command(label="Height Converter", command=say_goodbye)
 button2.bind("<Button-1>", display_dropdown)
 
 button3 = gui.Button(root, text="Loram Ipsum", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray')
