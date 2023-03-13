@@ -1,7 +1,7 @@
 import tkinter as gui
 import math 
 
-def openWindowNumbar1(aParent): #function to create new window
+def open_calc(aParent): #function to create new window
     root = gui.Toplevel(aParent)
 
     def add_to_calculation(symbol): #Done so calculator can see do what it's supposed to do. Returns the argument "symbol"
