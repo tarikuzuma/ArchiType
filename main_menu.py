@@ -1,4 +1,5 @@
 import tkinter as gui
+import os
 from calculator import *
 from converter import *
 from converterheight import *
@@ -25,7 +26,7 @@ dropdown_menu.add_command(label="Temperature Convert", command=lambda: open_temp
 dropdown_menu.add_command(label="Height Converter", command=lambda: open_heightcon(root))
 button2.bind("<Button-1>", display_dropdown)
 
-button3 = gui.Button(root, text="Loram Ipsum", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray', command=print("Coming Soon"))
+button3 = gui.Button(root, text="Pythagorean Theorem Converter", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray', command=lambda: os.system('python pytha.py'))
 button3.pack(padx=20, pady= 7)
 
 root.mainloop() #calls the mainloop of tkinter
