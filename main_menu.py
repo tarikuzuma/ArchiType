@@ -1,10 +1,7 @@
 import tkinter as gui
 from calculator import *
 from converter import *
-
-
-def say_goodbye():
-    print("Goodbye!")
+from converterheight import *
 
 def display_dropdown(event):
     dropdown_menu.post(event.x_root, event.y_root)
@@ -25,10 +22,10 @@ button2.pack(padx=20, pady= 7)
 
 dropdown_menu = gui.Menu(button2, tearoff=False)
 dropdown_menu.add_command(label="Temperature Convert", command=lambda: open_tempcon(root))
-dropdown_menu.add_command(label="Height Converter", command=say_goodbye)
+dropdown_menu.add_command(label="Height Converter", command=lambda: open_heightcon(root))
 button2.bind("<Button-1>", display_dropdown)
 
-button3 = gui.Button(root, text="Loram Ipsum", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray')
+button3 = gui.Button(root, text="Loram Ipsum", font = ('Helvetica', 13), height= 2, width=50, fg='white', bg='gray', command=print("Coming Soon"))
 button3.pack(padx=20, pady= 7)
 
 root.mainloop() #calls the mainloop of tkinter
