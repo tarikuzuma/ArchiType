@@ -12,6 +12,7 @@ def temp_convert(symbol):
     if symbol == "C":
         f = float(computation)
         c = (f - 32) * (5/9)
+        c = round(c, 2)
         computation = str(c)
         text_result.delete(1.0, "end")
         text_result.insert(1.0, c)
@@ -19,10 +20,10 @@ def temp_convert(symbol):
     elif symbol == "F":
         c = float(computation)
         f = (c * (9/5)) + 32
+        f = round(f, 2)
         computation = str(c)
         text_result.delete(1.0, "end")
         text_result.insert(1.0, f)
-
 
 def clear_field():
     global computation
