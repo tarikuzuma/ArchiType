@@ -74,7 +74,7 @@ def conversion():
     #Conversion of unit to another unit.
     print ("")
     print ("This program converts:")
-    print ("1. Meters, Kilometers, Miles, Feet")
+    print ("1. Meters, Inches, Centimeters, Feet")
     print ("2. Fahrenheit to Celsius\n")
 
     while True:
