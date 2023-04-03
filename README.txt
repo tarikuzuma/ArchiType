@@ -7,12 +7,13 @@ A software that acts as a scientific caclulator, temperature converter, height c
 Note: Main Menu might not respond when running Pythagorean Theorem Finder. Make sure to quit pytha.py first for the main menu to work again.
 
 
-Version 2.0 is the updated application with a GUI.
+Version 2.1 is the updated application with a GUI.
 
 ***This Version Includes:***
 *  Pythagorean Theorem Calculator
 *  Temperature Converter (F and C only)
 *  Height Converter
 *  Scientific Calculator
+*  Triangle Type Assessment and Area Checker
 *  A working GUI!!!
-*  Option to use a Command-line interface 
+*  Option to use a Command-line interface
