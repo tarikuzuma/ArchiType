@@ -17,3 +17,6 @@ Version 2.1 is the updated application with a GUI.
 *  Triangle Type Assessment and Area Checker
 *  A working GUI!!!
 *  Option to use a Command-line interface
+
+TODO:
+*  Fix hypothenuse checker and check if user input is negative. If negative, then input becomes invalid.
